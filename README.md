@@ -10,6 +10,13 @@
 - 👀 How to reach me [www.bharadwajsathya.com](https://www.bharadwajsathya.com)
 - 📫 How to reach me: Check social links below.
 
+## Social Links
+
+<div>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/linkedin/linkedin-original.svg" title="Linked In" alt="Linked In" width="40" height="40" />&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/google/google-original.svg" title="Gmail" alt="Gmail" width="40" height="40" />&nbsp;
+</div>
+
 ## Languages and Tools
 
 <div>
