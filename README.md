@@ -7,7 +7,7 @@
 - 🧭 I'm enthusiast exploring and working in Data Science and SoftwareEngineer.
 - 🌱 I’m currently learning core concepts in Neural Network.
 - 💞️ I’m looking to collaborate on developing real-time projects.
-- 📫 How to reach me www.bharadwajsathya.com
+- 👀 How to reach me www.bharadwajsathya.com
 - 📫 How to reach me: Check social links below.
 
 ### Languages and Tools
