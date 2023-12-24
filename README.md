@@ -23,7 +23,7 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40" style="pointer-events: none;"/>
 </div>
 
-### Streaks
+### 🔥 Streaks
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Bharadwaj-Sathya)](https://git.io/streak-stats)
 
