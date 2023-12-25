@@ -31,6 +31,37 @@
 </div>
 
 <!--START_SECTION:waka-->
+![Profile Views](http://img.shields.io/badge/Profile%20Views-62-blue)
+
+**🐱 My GitHub Data** 
+
+> 📦 377.6 kB Used in GitHub's Storage 
+ > 
+> 🏆 210 Contributions in the Year 2023
+ > 
+> 💼 Opted to Hire
+ > 
+> 📜 8 Public Repositories 
+ > 
+> 🔑 2 Private Repositories 
+ > 
+**I Mostly Code in Jupyter Notebook** 
+
+```text
+Jupyter Notebook         5 repos             ██████████████░░░░░░░░░░░   55.56 % 
+Python                   2 repos             ██████░░░░░░░░░░░░░░░░░░░   22.22 % 
+C++                      1 repo              ███░░░░░░░░░░░░░░░░░░░░░░   11.11 % 
+CSS                      1 repo              ███░░░░░░░░░░░░░░░░░░░░░░   11.11 % 
+```
+
+
+
+**Timeline**
+
+![Lines of Code chart](https://raw.githubusercontent.com/Bharadwaj-Sathya/Bharadwaj-Sathya/main/assets/bar_graph.png)
+
+
+ Last Updated on 25/12/2023 08:35:00 UTC
 <!--END_SECTION:waka-->
 
 ## 🔥 Streaks
