@@ -31,11 +31,6 @@
 </div>
 <br></br>
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-2%2C501%20hrs%2033%20mins-blue)
-
-![Profile Views](http://img.shields.io/badge/Profile%20Views-1080-blue)
-
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-4.8%20million%20lines%20of%20code-blue)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-62-blue)
 
@@ -60,14 +55,6 @@ C++                      1 repo              ███░░░░░░░░�
 CSS                      1 repo              ███░░░░░░░░░░░░░░░░░░░░░░   11.11 % 
 ```
 
-```text
-💬 Languages:
-JavaScript               5 hrs 26 mins       ███████████████░░░░░░░░░░   61.97%
-PHP                      1 hr 35 mins        ████░░░░░░░░░░░░░░░░░░░░░   18.07%
-Markdown                 1 hr 9 mins         ███░░░░░░░░░░░░░░░░░░░░░░   13.3%
-Python                   22 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   4.32%
-XML                      8 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   1.62%
-```
 
  Last Updated on 25/12/2023 08:35:00 UTC
 <!--END_SECTION:waka-->
