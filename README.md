@@ -31,8 +31,9 @@
 </div>
 <br></br>
 <!--START_SECTION:waka-->
-
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-62-blue)
+
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.6%20million%20lines%20of%20code-blue)
 
 **🐱 My GitHub Data** 
 
@@ -62,7 +63,7 @@ CSS                      1 repo              ███░░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/Bharadwaj-Sathya/Bharadwaj-Sathya/main/assets/bar_graph.png)
 
 
- Last Updated on 25/12/2023 09:12:42 UTC
+ Last Updated on 25/12/2023 09:19:39 UTC
 <!--END_SECTION:waka-->
 
 ## 🔥 Streaks
