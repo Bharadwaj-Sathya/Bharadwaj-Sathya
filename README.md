@@ -32,7 +32,7 @@
 
 ## 🔥 Streaks
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Bharadwaj-Sathya&fire=FFA500&ring=DD2727)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com?user=Bharadwaj-Sathya)](https://git.io/streak-stats)
 
 ## 📈 Github Stats 
 
