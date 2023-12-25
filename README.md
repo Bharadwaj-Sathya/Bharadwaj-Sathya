@@ -31,14 +31,13 @@
 </div>
 <br></br>
 <!--START_SECTION:waka-->
-
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-62-blue)
 
 **🐱 My GitHub Data** 
 
 > 📦 377.6 kB Used in GitHub's Storage 
  > 
-> 🏆 210 Contributions in the Year 2023
+> 🏆 217 Contributions in the Year 2023
  > 
 > 💼 Opted to Hire
  > 
@@ -56,7 +55,13 @@ CSS                      1 repo              ███░░░░░░░░�
 ```
 
 
- Last Updated on 25/12/2023 08:35:00 UTC
+
+**Timeline**
+
+![Lines of Code chart](https://raw.githubusercontent.com/Bharadwaj-Sathya/Bharadwaj-Sathya/main/assets/bar_graph.png)
+
+
+ Last Updated on 25/12/2023 09:12:42 UTC
 <!--END_SECTION:waka-->
 
 ## 🔥 Streaks
