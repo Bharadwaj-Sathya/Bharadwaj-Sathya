@@ -31,8 +31,35 @@
 </div>
 <br></br>
 <!--START_SECTION:waka-->
+![Profile Views](http://img.shields.io/badge/Profile%20Views-62-blue)
+
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.6%20million%20lines%20of%20code-blue)
+
+**🐱 My GitHub Data** 
+
+> 📦 377.6 kB Used in GitHub's Storage 
+ > 
+> 🏆 222 Contributions in the Year 2023
+ > 
+> 💼 Opted to Hire
+ > 
+> 📜 8 Public Repositories 
+ > 
+> 🔑 2 Private Repositories 
+ > 
+**I Mostly Code in Jupyter Notebook** 
+
+```text
+Jupyter Notebook         5 repos             ██████████████░░░░░░░░░░░   55.56 % 
+Python                   2 repos             ██████░░░░░░░░░░░░░░░░░░░   22.22 % 
+C++                      1 repo              ███░░░░░░░░░░░░░░░░░░░░░░   11.11 % 
+CSS                      1 repo              ███░░░░░░░░░░░░░░░░░░░░░░   11.11 % 
+```
 
 
+
+
+ Last Updated on 25/12/2023 09:34:02 UTC
 <!--END_SECTION:waka-->
 
 ## 🔥 Streaks
