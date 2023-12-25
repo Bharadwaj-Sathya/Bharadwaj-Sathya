@@ -18,4 +18,6 @@ jobs:
           SHOW_PROFILE_VIEWS : "True"
           SHOW_TOTAL_CODE_TIME : "True"
           SHOW_LANGUAGE: "True"
+          DEBUG_LOGGING : "False"
+          SHOW_LOC_CHART : "False"
           LOCALE: "en"
