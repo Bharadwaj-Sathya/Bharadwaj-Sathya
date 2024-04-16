@@ -32,9 +32,9 @@
 <br></br>
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-122%20hrs%2056%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-123%20hrs%2013%20mins-blue)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-2-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-4-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-2.4%20million%20lines%20of%20code-blue)
 
@@ -75,10 +75,9 @@ Sunday                   71 commits          ████░░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-JavaScript               34 mins             █████████████░░░░░░░░░░░░   50.03 % 
-Other                    26 mins             ██████████░░░░░░░░░░░░░░░   38.42 % 
-Python                   7 mins              ███░░░░░░░░░░░░░░░░░░░░░░   11.46 % 
-Git                      0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.08 % 
+Other                    43 mins             ████████████████░░░░░░░░░   63.40 % 
+JavaScript               17 mins             ███████░░░░░░░░░░░░░░░░░░   26.26 % 
+Python                   7 mins              ███░░░░░░░░░░░░░░░░░░░░░░   10.34 % 
 
 🔥 Editors: 
 VS Code                  1 hr 8 mins         █████████████████████████   100.00 % 
@@ -103,7 +102,7 @@ CSS                      1 repo              ██░░░░░░░░░�
 
 
 
- Last Updated on 15/04/2024 18:33:08 UTC
+ Last Updated on 16/04/2024 18:31:10 UTC
 <!--END_SECTION:waka-->
 
 ## 🔥 Streaks
