@@ -42,6 +42,8 @@
 
 > 📦 438.5 kB Used in GitHub's Storage 
  > 
+> 🏆 195 Contributions in the Year 2024
+ > 
 > 💼 Opted to Hire
  > 
 > 📜 11 Public Repositories 
@@ -75,17 +77,16 @@ Sunday                   71 commits          ████░░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-HTML                     3 mins              ████████████████████████░   96.52 % 
-CSS                      0 secs              █░░░░░░░░░░░░░░░░░░░░░░░░   03.48 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-VS Code                  3 mins              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-Accio                    3 mins              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Windows                  3 mins              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 **I Mostly Code in Jupyter Notebook** 
@@ -101,7 +102,7 @@ CSS                      1 repo              ██░░░░░░░░░�
 
 
 
- Last Updated on 11/06/2024 18:37:02 UTC
+ Last Updated on 12/06/2024 18:36:15 UTC
 <!--END_SECTION:waka-->
 
 ## 🔥 Streaks
