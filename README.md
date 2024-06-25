@@ -75,16 +75,16 @@ Sunday                   71 commits          ████░░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-No Activity Tracked This Week
+Other                    0 secs              █████████████████████████   100.00 % 
 
 🔥 Editors: 
-No Activity Tracked This Week
+VS Code                  0 secs              █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-No Activity Tracked This Week
+MarketMixModel           0 secs              █████████████████████████   100.00 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+Windows                  0 secs              █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in Jupyter Notebook** 
@@ -100,7 +100,7 @@ CSS                      1 repo              ██░░░░░░░░░�
 
 
 
- Last Updated on 24/06/2024 18:35:59 UTC
+ Last Updated on 25/06/2024 18:37:17 UTC
 <!--END_SECTION:waka-->
 
 ## 🔥 Streaks
