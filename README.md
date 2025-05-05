@@ -32,9 +32,9 @@
 <br></br>
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-703%20hrs%2037%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-705%20hrs%2018%20mins-blue)
 
-![Profile Views](http://img.shields.io/badge/Profile%20Views-3-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-4.7%20million%20lines%20of%20code-blue)
 
@@ -75,17 +75,17 @@ Sunday                   79 commits          ████░░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-Python                   1 min               █████████████░░░░░░░░░░░░   50.50 % 
-Other                    1 min               ████████████░░░░░░░░░░░░░   49.50 % 
+Other                    1 hr 17 mins        ███████████████████░░░░░░   74.97 % 
+Python                   25 mins             ██████░░░░░░░░░░░░░░░░░░░   25.03 % 
 
 🔥 Editors: 
-VS Code                  2 mins              █████████████████████████   100.00 % 
+VS Code                  1 hr 43 mins        █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-Python                   2 mins              █████████████████████████   100.00 % 
+Python                   1 hr 43 mins        █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Windows                  2 mins              █████████████████████████   100.00 % 
+Windows                  1 hr 43 mins        █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in TypeScript** 
@@ -101,7 +101,7 @@ CSS                      1 repo              ██░░░░░░░░░�
 
 
 
- Last Updated on 04/05/2025 18:42:55 UTC
+ Last Updated on 05/05/2025 18:43:13 UTC
 <!--END_SECTION:waka-->
 
 ## 🔥 Streaks
