@@ -32,7 +32,7 @@
 <br></br>
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-809%20hrs%2044%20mins-blue)
+![Code Time](http://img.shields.io/badge/Code%20Time-810%20hrs%203%20mins-blue)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-0-blue)
 
@@ -40,7 +40,9 @@
 
 **🐱 My GitHub Data** 
 
-> 📦 473.5 kB Used in GitHub's Storage 
+> 📦 473.4 kB Used in GitHub's Storage 
+ > 
+> 🏆 33 Contributions in the Year 2025
  > 
 > 💼 Opted to Hire
  > 
@@ -75,16 +77,16 @@ Sunday                   79 commits          ████░░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-Python                   12 mins             █████████████████████████   100.00 % 
+TypeScript               18 mins             █████████████████████████   100.00 % 
 
 🔥 Editors: 
-PyCharm                  12 mins             █████████████████████████   100.00 % 
+VS Code                  18 mins             █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-FitnessFin               12 mins             █████████████████████████   100.00 % 
+environment-health       18 mins             █████████████████████████   100.00 % 
 
 💻 Operating System: 
-Windows                  12 mins             █████████████████████████   100.00 % 
+Windows                  18 mins             █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in TypeScript** 
@@ -100,7 +102,7 @@ CSS                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 08/07/2025 18:48:26 UTC
+ Last Updated on 09/07/2025 18:48:50 UTC
 <!--END_SECTION:waka-->
 
 ## 🔥 Streaks
