@@ -1,0 +1,404 @@
+# requirements.txt
+celery==5.3.4
+redis==5.0.1
+flower==2.0.1
+python-dotenv==1.0.0
+
+# =============================================================================
+# celery_app.py - Main Celery application configuration
+# =============================================================================
+
+from celery import Celery
+from celery.schedules import crontab
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Redis configuration
+REDIS_URL = os.getenv('REDIS_URL', 'redis://localhost:6379/0')
+
+# Create Celery app
+app = Celery('task_manager')
+
+# Configure Celery
+app.conf.update(
+    # Broker settings
+    broker_url=REDIS_URL,
+    
+    # No result backend - tasks don't store results
+    result_backend=None,
+    
+    # Task settings
+    task_serializer='json',
+    accept_content=['json'],
+    result_serializer='json',
+    timezone='UTC',
+    enable_utc=True,
+    
+    # Worker settings
+    worker_prefetch_multiplier=1,
+    task_acks_late=True,
+    worker_max_tasks_per_child=1000,
+    
+    # Task routing
+    task_routes={
+        'tasks.*': {'queue': 'default'},
+        'scheduled_tasks.*': {'queue': 'scheduled'},
+    },
+    
+    # Beat schedule for periodic tasks
+    beat_schedule={
+        'cleanup-every-hour': {
+            'task': 'scheduled_tasks.cleanup_task',
+            'schedule': crontab(minute=0),  # Every hour
+        },
+        'daily-report': {
+            'task': 'scheduled_tasks.daily_report',
+            'schedule': crontab(hour=9, minute=0),  # 9:00 AM daily
+        },
+        'health-check': {
+            'task': 'scheduled_tasks.health_check',
+            'schedule': 30.0,  # Every 30 seconds
+        },
+        'weekly-maintenance': {
+            'task': 'scheduled_tasks.weekly_maintenance',
+            'schedule': crontab(hour=2, minute=0, day_of_week=0),  # Sunday 2:00 AM
+        },
+    },
+    
+    # Monitoring
+    worker_send_task_events=True,
+    task_send_sent_event=True,
+)
+
+# =============================================================================
+# tasks.py - Regular Celery tasks
+# =============================================================================
+
+from celery_app import app
+import time
+import requests
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+@app.task(bind=True, max_retries=3)
+def send_email(self, to_email, subject, body):
+    """Send email task with retry logic"""
+    try:
+        logger.info(f"Sending email to {to_email}")
+        # Simulate email sending
+        time.sleep(2)
+        
+        # Simulate occasional failures for demo
+        import random
+        if random.random() < 0.1:  # 10% failure rate
+            raise Exception("Email service temporarily unavailable")
+            
+        logger.info(f"Email sent successfully to {to_email}")
+        return f"Email sent to {to_email}"
+        
+    except Exception as exc:
+        logger.error(f"Email failed: {exc}")
+        if self.request.retries < self.max_retries:
+            raise self.retry(countdown=60 * (self.request.retries + 1), exc=exc)
+        raise
+
+@app.task
+def process_data(data):
+    """Process data task"""
+    logger.info(f"Processing data: {len(data)} items")
+    
+    # Simulate data processing
+    processed_items = []
+    for item in data:
+        time.sleep(0.1)  # Simulate processing time
+        processed_items.append(item.upper())
+    
+    logger.info(f"Processed {len(processed_items)} items")
+    return len(processed_items)
+
+@app.task(bind=True)
+def long_running_task(self, duration=60):
+    """Long running task with progress updates"""
+    logger.info(f"Starting long running task for {duration} seconds")
+    
+    for i in range(duration):
+        time.sleep(1)
+        # Update task state for monitoring
+        self.update_state(
+            state='PROGRESS',
+            meta={'current': i + 1, 'total': duration}
+        )
+    
+    logger.info("Long running task completed")
+    return f"Task completed after {duration} seconds"
+
+@app.task
+def fetch_api_data(url):
+    """Fetch data from external API"""
+    try:
+        logger.info(f"Fetching data from {url}")
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+        
+        data = response.json()
+        logger.info(f"Fetched {len(data)} items from API")
+        return len(data)
+        
+    except requests.RequestException as exc:
+        logger.error(f"API request failed: {exc}")
+        raise
+
+# =============================================================================
+# scheduled_tasks.py - Scheduled/Periodic tasks
+# =============================================================================
+
+from celery_app import app
+import logging
+import psutil
+import os
+
+logger = logging.getLogger(__name__)
+
+@app.task
+def cleanup_task():
+    """Hourly cleanup task"""
+    logger.info("Running hourly cleanup task")
+    
+    # Simulate cleanup operations
+    temp_files_removed = 0
+    cache_cleared = True
+    
+    # Example cleanup operations
+    temp_dir = "/tmp"
+    if os.path.exists(temp_dir):
+        for file in os.listdir(temp_dir):
+            if file.startswith("temp_") and file.endswith(".tmp"):
+                try:
+                    os.remove(os.path.join(temp_dir, file))
+                    temp_files_removed += 1
+                except OSError:
+                    pass
+    
+    logger.info(f"Cleanup completed: {temp_files_removed} files removed")
+    return f"Cleaned up {temp_files_removed} temporary files"
+
+@app.task
+def daily_report():
+    """Daily report generation task"""
+    logger.info("Generating daily report")
+    
+    # Simulate report generation
+    report_data = {
+        'date': str(time.time()),
+        'tasks_processed': 150,
+        'errors': 2,
+        'success_rate': 98.7
+    }
+    
+    logger.info(f"Daily report generated: {report_data}")
+    return report_data
+
+@app.task
+def health_check():
+    """Regular health check task"""
+    try:
+        # Check system resources
+        cpu_percent = psutil.cpu_percent(interval=1)
+        memory = psutil.virtual_memory()
+        disk = psutil.disk_usage('/')
+        
+        health_status = {
+            'cpu_percent': cpu_percent,
+            'memory_percent': memory.percent,
+            'disk_percent': disk.percent,
+            'status': 'healthy' if cpu_percent < 90 and memory.percent < 90 else 'warning'
+        }
+        
+        logger.info(f"Health check: {health_status}")
+        return health_status
+        
+    except Exception as exc:
+        logger.error(f"Health check failed: {exc}")
+        return {'status': 'error', 'message': str(exc)}
+
+@app.task
+def weekly_maintenance():
+    """Weekly maintenance task"""
+    logger.info("Running weekly maintenance")
+    
+    maintenance_tasks = [
+        "Database optimization",
+        "Log rotation",
+        "Cache warming",
+        "Security scan"
+    ]
+    
+    completed_tasks = []
+    for task in maintenance_tasks:
+        logger.info(f"Executing: {task}")
+        time.sleep(2)  # Simulate task execution
+        completed_tasks.append(task)
+    
+    logger.info(f"Weekly maintenance completed: {len(completed_tasks)} tasks")
+    return f"Completed {len(completed_tasks)} maintenance tasks"
+
+# =============================================================================
+# worker.py - Worker management script
+# =============================================================================
+
+#!/usr/bin/env python3
+"""
+Worker management script for Celery
+"""
+
+import subprocess
+import sys
+import signal
+import os
+from multiprocessing import Process
+
+def start_worker():
+    """Start Celery worker"""
+    cmd = [
+        'celery', '-A', 'celery_app', 'worker',
+        '--loglevel=info',
+        '--queues=default,scheduled',
+        '--concurrency=4',
+        '--hostname=worker@%h'
+    ]
+    
+    print("Starting Celery worker...")
+    subprocess.run(cmd)
+
+def start_beat():
+    """Start Celery beat scheduler"""
+    cmd = [
+        'celery', '-A', 'celery_app', 'beat',
+        '--loglevel=info',
+        '--schedule=/tmp/celerybeat-schedule',
+        '--pidfile=/tmp/celerybeat.pid'
+    ]
+    
+    print("Starting Celery beat scheduler...")
+    subprocess.run(cmd)
+
+def start_flower():
+    """Start Flower monitoring"""
+    cmd = [
+        'celery', '-A', 'celery_app', 'flower',
+        '--port=5555',
+        '--broker=redis://localhost:6379/0',
+        '--basic_auth=admin:password'
+    ]
+    
+    print("Starting Flower monitoring on http://localhost:5555")
+    subprocess.run(cmd)
+
+def signal_handler(signum, frame):
+    """Handle shutdown signals"""
+    print("\nShutting down...")
+    sys.exit(0)
+
+if __name__ == '__main__':
+    signal.signal(signal.SIGINT, signal_handler)
+    signal.signal(signal.SIGTERM, signal_handler)
+    
+    if len(sys.argv) != 2:
+        print("Usage: python worker.py [worker|beat|flower|all]")
+        sys.exit(1)
+    
+    mode = sys.argv[1].lower()
+    
+    if mode == 'worker':
+        start_worker()
+    elif mode == 'beat':
+        start_beat()
+    elif mode == 'flower':
+        start_flower()
+    elif mode == 'all':
+        # Start all services
+        processes = []
+        
+        # Start worker
+        worker_process = Process(target=start_worker)
+        worker_process.start()
+        processes.append(worker_process)
+        
+        # Start beat
+        beat_process = Process(target=start_beat)
+        beat_process.start()
+        processes.append(beat_process)
+        
+        # Start flower
+        flower_process = Process(target=start_flower)
+        flower_process.start()
+        processes.append(flower_process)
+        
+        # Wait for all processes
+        try:
+            for process in processes:
+                process.join()
+        except KeyboardInterrupt:
+            print("\nShutting down all services...")
+            for process in processes:
+                process.terminate()
+                process.join()
+    else:
+        print("Invalid mode. Use: worker, beat, flower, or all")
+        sys.exit(1)
+
+# =============================================================================
+# task_sender.py - Script to send tasks for testing
+# =============================================================================
+
+#!/usr/bin/env python3
+"""
+Script to send tasks to Celery for testing
+"""
+
+from celery_app import app
+from tasks import send_email, process_data, long_running_task, fetch_api_data
+import time
+
+def send_test_tasks():
+    """Send various test tasks"""
+    print("Sending test tasks...")
+    
+    # Send email task
+    result1 = send_email.delay(
+        to_email="test@example.com",
+        subject="Test Email",
+        body="This is a test email"
+    )
+    print(f"Email task sent: {result1.id}")
+    
+    # Process data task
+    test_data = ["item1", "item2", "item3", "item4"]
+    result2 = process_data.delay(test_data)
+    print(f"Data processing task sent: {result2.id}")
+    
+    # Long running task
+    result3 = long_running_task.delay(duration=30)
+    print(f"Long running task sent: {result3.id}")
+    
+    # API fetch task
+    result4 = fetch_api_data.delay("https://jsonplaceholder.typicode.com/posts")
+    print(f"API fetch task sent: {result4.id}")
+    
+    print("\nAll tasks sent successfully!")
+    print("Check Flower at http://localhost:5555 to monitor tasks")
+
+if __name__ == '__main__':
+    send_test_tasks()
+
+# =============================================================================
+# .env - Environment variables
+# =============================================================================
+
+# Redis configuration
+REDIS_URL=redis://localhost:637
