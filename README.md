@@ -32,9 +32,7 @@
 <br></br>
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-813%20hrs%2011%20mins-blue)
-
-![Profile Views](http://img.shields.io/badge/Profile%20Views-20-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-13-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-4.7%20million%20lines%20of%20code-blue)
 
@@ -42,53 +40,12 @@
 
 > 📦 473.5 kB Used in GitHub's Storage 
  > 
-> 🏆 35 Contributions in the Year 2025
- > 
 > 💼 Opted to Hire
  > 
 > 📜 10 Public Repositories 
  > 
 > 🔑 8 Private Repositories 
  > 
-**I'm a Night 🦉** 
-
-```text
-🌞 Morning                89 commits          ████░░░░░░░░░░░░░░░░░░░░░   16.27 % 
-🌆 Daytime                124 commits         ██████░░░░░░░░░░░░░░░░░░░   22.67 % 
-🌃 Evening                287 commits         █████████████░░░░░░░░░░░░   52.47 % 
-🌙 Night                  47 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.59 % 
-```
-📅 **I'm Most Productive on Monday** 
-
-```text
-Monday                   92 commits          ████░░░░░░░░░░░░░░░░░░░░░   16.82 % 
-Tuesday                  78 commits          ████░░░░░░░░░░░░░░░░░░░░░   14.26 % 
-Wednesday                68 commits          ███░░░░░░░░░░░░░░░░░░░░░░   12.43 % 
-Thursday                 87 commits          ████░░░░░░░░░░░░░░░░░░░░░   15.90 % 
-Friday                   77 commits          ████░░░░░░░░░░░░░░░░░░░░░   14.08 % 
-Saturday                 66 commits          ███░░░░░░░░░░░░░░░░░░░░░░   12.07 % 
-Sunday                   79 commits          ████░░░░░░░░░░░░░░░░░░░░░   14.44 % 
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-🕑︎ Time Zone: Asia/Kolkata
-
-💬 Programming Languages: 
-TypeScript               6 mins              █████████████████████████   100.00 % 
-
-🔥 Editors: 
-VS Code                  6 mins              █████████████████████████   100.00 % 
-
-🐱‍💻 Projects: 
-FitnessFin               6 mins              █████████████████████████   100.00 % 
-
-💻 Operating System: 
-Windows                  6 mins              █████████████████████████   100.00 % 
-```
-
 **I Mostly Code in TypeScript** 
 
 ```text
@@ -102,7 +59,7 @@ CSS                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 28/07/2025 18:52:27 UTC
+ Last Updated on 30/07/2025 18:51:31 UTC
 <!--END_SECTION:waka-->
 
 ## 🔥 Streaks
