@@ -42,8 +42,6 @@
 
 > 📦 473.5 kB Used in GitHub's Storage 
  > 
-> 🏆 35 Contributions in the Year 2025
- > 
 > 💼 Opted to Hire
  > 
 > 📜 10 Public Repositories 
@@ -77,20 +75,16 @@ Sunday                   79 commits          ████░░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-Python                   6 mins              ████████████░░░░░░░░░░░░░   47.43 % 
-INI                      4 mins              ████████░░░░░░░░░░░░░░░░░   32.58 % 
-TypeScript               2 mins              ████░░░░░░░░░░░░░░░░░░░░░   15.70 % 
-textmate                 0 secs              █░░░░░░░░░░░░░░░░░░░░░░░░   04.29 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-PyCharm                  11 mins             █████████████████████░░░░   84.30 % 
-VS Code                  2 mins              ████░░░░░░░░░░░░░░░░░░░░░   15.70 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-FitnessFin               13 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Windows                  13 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 **I Mostly Code in TypeScript** 
@@ -106,7 +100,7 @@ CSS                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 04/08/2025 18:52:53 UTC
+ Last Updated on 05/08/2025 18:54:28 UTC
 <!--END_SECTION:waka-->
 
 ## 🔥 Streaks
