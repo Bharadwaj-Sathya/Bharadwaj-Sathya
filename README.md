@@ -77,18 +77,16 @@ Sunday                   79 commits          ████░░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-Python                   30 mins             ██████████████████████░░░   87.34 % 
-Other                    4 mins              ███░░░░░░░░░░░░░░░░░░░░░░   12.66 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-PyCharm                  27 mins             ████████████████████░░░░░   80.82 % 
-VS Code                  6 mins              █████░░░░░░░░░░░░░░░░░░░░   19.18 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-FitnessFin               34 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Windows                  34 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 **I Mostly Code in TypeScript** 
@@ -104,7 +102,7 @@ CSS                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 05/10/2025 18:40:49 UTC
+ Last Updated on 06/10/2025 18:45:08 UTC
 <!--END_SECTION:waka-->
 
 ## 🔥 Streaks
