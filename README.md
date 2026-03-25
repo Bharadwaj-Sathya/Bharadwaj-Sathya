@@ -77,17 +77,16 @@ Sunday                   144 commits         █████░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-Python                   13 mins             ██████████████████░░░░░░░   71.25 % 
-Text                     5 mins              ███████░░░░░░░░░░░░░░░░░░   28.75 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-PyCharm                  19 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-FitFinance               19 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Windows                  19 mins             █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 **I Mostly Code in TypeScript** 
@@ -103,7 +102,7 @@ CSS                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 24/03/2026 19:32:41 UTC
+ Last Updated on 25/03/2026 19:14:44 UTC
 <!--END_SECTION:waka-->
 
 ## 🔥 Streaks
