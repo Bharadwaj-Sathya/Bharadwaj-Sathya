@@ -77,18 +77,16 @@ Sunday                   146 commits         █████░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-CSV                      6 mins              █████████████████████████   99.27 % 
-Python                   0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.52 % 
-Markdown                 0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.21 % 
+No Activity Tracked This Week
 
 🔥 Editors: 
-PyCharm                  6 mins              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-StockAdvisor             6 mins              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Windows                  6 mins              █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 **I Mostly Code in Jupyter Notebook** 
@@ -104,7 +102,7 @@ CSS                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 21/04/2026 19:43:07 UTC
+ Last Updated on 22/04/2026 19:44:53 UTC
 <!--END_SECTION:waka-->
 
 ## 🔥 Streaks
