@@ -40,7 +40,7 @@
 
 **🐱 My GitHub Data** 
 
-> 📦 477.2 kB Used in GitHub's Storage 
+> 📦 489.9 kB Used in GitHub's Storage 
  > 
 > 🏆 14 Contributions in the Year 2026
  > 
@@ -89,12 +89,12 @@ No Activity Tracked This Week
 No Activity Tracked This Week
 ```
 
-**I Mostly Code in Jupyter Notebook** 
+**I Mostly Code in TypeScript** 
 
 ```text
-Jupyter Notebook         6 repos             ████████░░░░░░░░░░░░░░░░░   31.58 % 
-TypeScript               6 repos             ████████░░░░░░░░░░░░░░░░░   31.58 % 
+TypeScript               7 repos             █████████░░░░░░░░░░░░░░░░   36.84 % 
 Python                   5 repos             ███████░░░░░░░░░░░░░░░░░░   26.32 % 
+Jupyter Notebook         5 repos             ███████░░░░░░░░░░░░░░░░░░   26.32 % 
 C++                      1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   05.26 % 
 CSS                      1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   05.26 % 
 ```
@@ -102,7 +102,7 @@ CSS                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 14/07/2026 19:49:21 UTC
+ Last Updated on 15/07/2026 19:43:02 UTC
 <!--END_SECTION:waka-->
 
 ## 🔥 Streaks
